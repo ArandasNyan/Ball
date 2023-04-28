@@ -38,7 +38,20 @@ window.onload = function () {
         ball.height = height;
         
         lineSize = (Width < height ? Width : height) / 2;
-        line.fillStyle = "white";
+        let color = ["white", "black"]
+        document.addEventListener("keydown", function(event) {
+            // Verifique se a tecla pressionada foi a tecla "1"
+            if (event.key === "1") {
+              // Altera o background do elemento body para a primeira cor do array
+              line.fillStyle = color[0];
+            }
+            
+            // Verifique se a tecla pressionada foi a tecla "2"
+            if (event.key === "2") {
+              // Altera o background do elemento body para a segunda cor do array
+              line.fillStyle = color[1];
+            }
+          });
         line.fillRect(0, 0, Width, height);
     }
     init();
@@ -65,9 +78,21 @@ window.onload = function () {
     }
 
     function animate() {
-        let typeColor = ['rgba(0, 0, 0, 0.04)', 'rgba(255, 255, 255, 0.04']
+        let typeColor = ['rgba(0, 0, 0, 0.04)', 'rgba(255, 255, 255, 0.04)']
 
-        line.fillStyle = typeColor[0];
+        document.addEventListener("keydown", function(event) {
+            // Verifique se a tecla pressionada foi a tecla "1"
+            if (event.key === "1") {
+              // Altera o background do elemento body para a primeira cor do array
+              line.fillStyle = typeColor[0];
+            }
+            
+            // Verifique se a tecla pressionada foi a tecla "2"
+            if (event.key === "2") {
+              // Altera o background do elemento body para a segunda cor do array
+              line.fillStyle = typeColor[1];
+            }
+          });
         line.fillRect(0, 0, Width, height);
         line.beginPath();
         line.moveTo((ctrls[0].x_axis + ctrls[num - 1].x_axis) / 2, (ctrls[0].y_axis + ctrls[num - 1].y_axis) / 2);
