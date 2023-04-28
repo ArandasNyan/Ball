@@ -40,15 +40,10 @@ window.onload = function () {
         lineSize = (Width < height ? Width : height) / 2;
         let color = ["white", "black"]
         document.addEventListener("keydown", function(event) {
-            // Verifique se a tecla pressionada foi a tecla "1"
             if (event.key === "1") {
-              // Altera o background do elemento body para a primeira cor do array
               line.fillStyle = color[0];
             }
-            
-            // Verifique se a tecla pressionada foi a tecla "2"
             if (event.key === "2") {
-              // Altera o background do elemento body para a segunda cor do array
               line.fillStyle = color[1];
             }
           });
@@ -81,15 +76,10 @@ window.onload = function () {
         let typeColor = ['rgba(0, 0, 0, 0.04)', 'rgba(255, 255, 255, 0.04)']
 
         document.addEventListener("keydown", function(event) {
-            // Verifique se a tecla pressionada foi a tecla "1"
             if (event.key === "1") {
-              // Altera o background do elemento body para a primeira cor do array
               line.fillStyle = typeColor[0];
             }
-            
-            // Verifique se a tecla pressionada foi a tecla "2"
             if (event.key === "2") {
-              // Altera o background do elemento body para a segunda cor do array
               line.fillStyle = typeColor[1];
             }
           });
