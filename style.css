@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#ball {
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
